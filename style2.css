@@ -1,0 +1,123 @@
+
+* { box-sizing: border-box;}
+body { background-color: #363538;
+       color: #52D6F4;
+	font-family: Verdana, Arial, sans-serif; 
+       margin: 0;
+}
+header { color: #363538;
+	  background-image: url(images/hero_image.jpg);
+	  background-size: 100% 100%;
+         margin-top: 50px;
+         font-size: 90%;
+         min-height: 300px;
+         text-align: center;
+         padding-top: 85px;
+}
+header a:link {color:#363538;}
+header a:visited {color:#52d6f4;}
+header a:hover {color:#8F92B2;}
+
+.home {height: 50vh;
+       padding-top: 5em;
+       padding-left: 8em;
+       }
+
+/*nav styling*/
+nav    { text-align: center;
+         font-weight: bold; 
+         background-color: #8d8c8a;
+         margin: 0;
+         padding-top: 0.5em;
+         padding-bottom: 1em;
+         padding-right: 0;
+         top: 0;
+         left: 0;
+         z-index: 9999;
+         width: auto;
+         height: auto;
+}
+nav ul { margin: 0;
+       padding-right: 2em;
+       font-size: 1em;
+       list-style-type: none;
+     }
+nav li {display: inline;
+      padding-left: 4em;
+     }
+nav a  { text-decoration: none; 
+}
+nav a:link {color:#363538;}
+nav a:visited {color:#497777;}
+nav a:hover {color:#52D6F4;}
+
+/*footer styling*/
+footer { font-size: small;
+	font-style: italic;
+	text-align: center;
+       clear: right;
+}
+
+/*divs styling*/
+
+
+#div1 {background-color: #8d8c8a;
+          padding: 2em;
+}
+
+/*body styling*/
+h1 { margin: 0;
+              text-align: center;
+          }
+h2 { margin: 0;
+    text-align: center;
+    padding-bottom: 25px;
+}
+h3 { margin: 0;
+       text-align: center;
+}
+p {    color: #408697;
+       font-weight: bold;
+       text-align: center;
+       padding-bottom: 25px;
+}
+form { display: flex; flex-direction: column; flex-wrap: nowrap;}
+
+input, textarea, datalist {margin-bottom: .5em;}
+
+.center {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+     }
+
+/* media and reactive styling*/
+@media (min-width: 600px) {
+       nav ul { display: flex;
+              justify-content: flex-end;
+               flex-wrap: nowrap ;}
+       section {padding-left: 2em;
+                padding-right: 2em;
+                flex: 1;}
+       #mathero {display: block;
+                 margin-bottom: 1em;}
+       #loungehero {display: block;
+                     margin-bottom: 1em;}
+       #flow {flex-direction: row;
+              flex-wrap: wrap;}
+       form { width: 60%; max-width: 40em; display: grid; gap: 1em; columns: 2; grid-template-columns: 9em 1fr;}
+       input[type="submit"] {grid-column: 2 / 2; width: 9em; margin-bottom: .5em;}       
+}
+@media (min-width: 1024px) {
+       header { font-size: 120%;}
+       .home { font-size: 50%;
+               height: 50vh;
+              padding-top: 5em;
+              padding-left: 8em;}
+       .content { height: 30vh;
+                 padding-top: 2em;
+                 padding-left: 8em;}
+       #wrapper {margin: auto;
+                 width: 80%;}
+}
